@@ -6,7 +6,7 @@ function Notes(props) {
   }
   return (
     <div className="note">
-      <p>{props.id}</p>
+      <p className="id">{props.id}</p>
       <h4>{props.title}</h4>
       <hr />
       <p>{props.content}</p>
