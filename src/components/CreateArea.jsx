@@ -19,8 +19,8 @@ function CreateArea(props) {
 
   function submitNote(event) {
     //button handleClick
-    props.onAdd(note);
-    setNote({
+    props.onAdd(note);  
+    setNote({              //after sbmit the text area is empty
       title: "",
       content: "",
     });
