@@ -5,7 +5,7 @@ import Notes from "./Note";
 import CreateArea from "./CreateArea";
 
 function App() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState([]); //plural
 
   //add note
   function addNote(newNote) {
@@ -17,7 +17,7 @@ function App() {
   //deletete note
   function deleteNote(id) {
     setNotes((prevNotes) => {
-      return prevNotes.filter((noteItem, index) => {
+      return prevNotes.filter((noteItem, index) => { //all previews note except those index with id deleted
         return index !== id;
       });
     });
